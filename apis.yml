@@ -1,7 +1,25 @@
 aid: float
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/float.png
 name: float
-description: float is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Float is a design-led product lab founded by David Okuniev and Neil Kinnish, the ex-Typeform
+  Labs team, building new consumer and creator software products under the mantra "we make new
+  products float." Its first product is Supercut, an AI-assisted video tool entering beta. Float
+  raised a EUR 1.6M seed round led by Point Nine Capital with angels including Koen Bok (Framer),
+  Christian Reber and Niklas Jansen (Interface Capital), Soleio, and Robert Munoz (Typeform). As of
+  this enrichment pass Float publishes only a marketing site (float.build) and product landing pages
+  and exposes no public API, developer documentation, SDKs, or developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/float/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Product Studio
+- Design
+- Software
+- Video
+- Startup
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/float-domain-security.yml
 - type: Website
   url: https://float.build
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
